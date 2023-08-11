@@ -1,0 +1,266 @@
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.gap-3 {
+  gap: 24px;
+}
+
+// margin
+
+$margin-unit: 4px;
+$margin-max: 25;
+
+@for $i from 1 through $margin-max {
+  .ml-#{$i} {
+    margin-left: $i * $margin-unit;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $margin-unit;
+  }
+  .mt-#{$i} {
+    margin-top: $i * $margin-unit;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $margin-unit;
+  }
+  .mx-#{$i} {
+    margin: 0 $i * $margin-unit;
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+// padding
+
+.pl-4 {
+  padding-left: 4px;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.py-4 {
+  padding: 16px 0;
+}
+
+.py-20 {
+  padding: 80px 0;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+// width
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-205 {
+  height: 205px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.bg-secondary {
+  background-color: $bg-color;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-gray {
+  color: #707070;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.fz-48 {
+  font-size: 48px;
+}
+
+.fz-64 {
+  font-size: 64px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 6px #00000029;
+}
+
+@include pad {
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .align-items-md-center {
+    align-items: center;
+  }
+
+  .mt-md-20 {
+    margin-top: 80px;
+  }
+
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
+
+  .mr-md-4 {
+    margin-right: 16px;
+  }
+
+  .fz-md-16 {
+    font-size: 16px;
+  }
+}
+
+@include mobile {
+  .flex-sm-column {
+    flex-direction: column;
+  }
+
+  .align-items-sm-start {
+    align-items: flex-start;
+  }
+
+  .d-sm-none {
+    display: none;
+  }
+
+  .mt-sm-6 {
+    margin-top: 24px;
+  }
+
+  .mt-sm-10 {
+    margin-top: 40px;
+  }
+
+  .mb-sm-6 {
+    margin-bottom: 24px;
+  }
+
+  .mb-sm-16 {
+    margin-bottom: 64px;
+  }
+
+  .my-sm-2 {
+    margin: 8px 0;
+  }
+
+  .w-sm-50 {
+    width: 50%;
+  }
+
+  .fz-sm-24 {
+    font-size: 24px;
+  }
+
+  .py-sm-40 {
+    padding: 40px 0;
+  }
+}
