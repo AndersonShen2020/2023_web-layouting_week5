@@ -1,23 +1,13 @@
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap";
 
-// helpers
+// bootstrap
+@import "bootstrap/scss/functions";
 @import "./helpers/variables";
-@import "./helpers/mixin";
-@import "./helpers/utilities";
-
-// base
-@import "./base/reset";
-@import "./base/base";
+@import "bootstrap/scss/bootstrap";
 
 // layout
-@import "./layout/grid";
-@import "./layout/header";
-@import "./layout/footer";
-
-// components
-@import "./components/btn";
-@import "./components/card";
-@import "./components/image";
+// @import "./layout/header";
+// @import "./layout/footer";
 
 // pages
-@import "./pages/index";
+// @import "./pages/index";
