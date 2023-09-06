@@ -1,95 +1,42 @@
-.banner {
-  background-image: url("@/assets/img/home-header.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: $color-secondary;
-  padding: 296px 0;
+aside {
+  color: $gray-900;
+  background-color: $gray-100;
+  max-width: 296px;
 
   a {
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    padding: 6px 12px;
-    background-color: $color-primary;
-    margin-top: 4px;
-  }
+    color: $gray-900;
+    text-decoration: none;
 
-  @include pad {
-    background-image: url("@/assets/img/home-header-sm.png");
-  }
+    &:hover {
+      color: $success;
+    }
 
-  @include mobile {
-    padding: 144px 0;
+    &.active {
+      color: $success;
+      padding-left: 28px;
+      margin-left: -32px;
+      border-left: 4px solid $success;
+    }
 
-    a {
-      margin-top: 8px;
+    span {
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 48;
     }
   }
-}
 
-.info {
-  img {
-    width: 100px;
-  }
+  .user {
+    &-img {
+      width: 40px;
+      height: 40px;
+    }
 
-  &-subtitle {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 16px 0 8px;
-  }
-}
-
-.bg-index {
-  background-image: url("../img/index-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-input,
-textarea {
-  padding: 6px 12px;
-  border: 1px solid #000;
-}
-
-input[type="checkbox"] {
-  margin-right: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  width: 15px;
-  height: 15px;
-  position: relative;
-}
-
-input[type="checkbox"]::after {
-  content: " ";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 0;
-  display: inline-block;
-  visibility: visible;
-  padding: 0 3px;
-  border-radius: 3px;
-}
-
-input[type="checkbox"]:checked::after {
-  content: "✓";
-  background-color: $color-primary;
-  color: #fff;
-  font-size: 12px;
-}
-
-button[type="submit"] {
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: $color-primary;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.9;
+    &-email {
+      font-size: 14px;
+      color: $gray-600;
+      line-height: 24px;
+    }
   }
 }
